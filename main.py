@@ -48,13 +48,14 @@ def llama3(prompt):
 # """
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         print("Usage: python script.py <file_name>")
         sys.exit(1)
     code_file = sys.argv[1]
     language = sys.argv[2]
+    user_prompt = sys.argv[3]
     with open(code_file,'r') as file:
         file_contents = file.read()
-    prompt = f"Generate unit test cases for the following {language} program: {file_contents}"
+    prompt = f"{user_prompt} {language} : {file_contents}"
     response = llama3(prompt)
     print(response)
