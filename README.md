@@ -8,7 +8,7 @@ This project uses Llama3 to generate unit test cases for code. With Llama3, you 
 
 * Generates unit test cases using Llama3
 * Supports 
-* 1. Python
+1. Python
 2. Java
 3. C#
 4. JavaScript
