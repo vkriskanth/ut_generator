@@ -1,4 +1,4 @@
-# Project Name: <project_name>
+# Project Name: <Unit Test Generator>
 
 ### Overview
 
